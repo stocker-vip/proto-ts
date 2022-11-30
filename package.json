@@ -1,0 +1,25 @@
+{
+  "name": "protows",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Regan",
+  "license": "ISC",
+  "peerDependencies": {
+    "@types/md5": "^2.3.2",
+    "md5": "^2.3.0",
+    "protobufjs": "^7.1.2",
+    "uuid": "^9.0.0",
+    "ws": "^8.11.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.0",
+    "@types/ws": "^8.5.3",
+    "typescript": "^4.9.3"
+  }
+}
