@@ -17,11 +17,11 @@ export class Server {
 			ws.on("message", (buffer) => {
 				let msg = decode(buffer as Uint8Array);
 				let data = this.deal(msg.method)(msg.data);
-				return parseReturnMsg({
+                ws.send(parseReturnMsg({
 					id: msg.id,
 					status: data ? "1" : "0",
 					data,
-				});
+				}))
 			});
 		});
 	}
